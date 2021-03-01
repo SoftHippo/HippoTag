@@ -31,29 +31,6 @@ namespace HippoTag
 			{
 				Console.WriteLine($"{t.Name}\t\t\t{t.Categories.Count}");
 			}
-
-			while(true)
-			{
-				Console.Write("> ");
-				var input = Console.ReadLine();
-				
-				if(input == "exit")
-				{
-					break;
-				}
-
-				if(!ht.CategoryTags.ContainsKey(input))
-				{
-					Console.WriteLine("invalid category");
-					continue;
-				}
-
-				foreach (Tag tag in ht.CategoryTags[input])
-				{
-					Console.WriteLine(tag.Name + "\t" + tag.FileLineNumber);
-				}
-				Console.WriteLine();
-			}
 		}
 	}
 }

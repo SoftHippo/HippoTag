@@ -43,13 +43,14 @@ namespace HippoTag
 							if (!existingTag.Categories.Contains(category)) 
 							{
 								existingTag.Categories.Add(category);
+								CategoryTags[category].Add(existingTag);
 							}
 							continue;
 						}
 
 						Tag newTag = new Tag()
 						{
-							Categories = new List<string>() { "category" },
+							Categories = new List<string>() { category },
 							FileLineNumber = lineNumber,
 							Name = word,
 							CategoryType = categoryType
@@ -86,7 +87,7 @@ namespace HippoTag
 				}
 			}
 
-
+			private void AddTag()
 		}
 
 		private static Exception HippoTagException(string v)
