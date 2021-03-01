@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30204.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HippoTag", "HippoTag\HippoTag.csproj", "{5A0EA141-F3BF-4A62-9B00-1F0D8F656A3A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5A0EA141-F3BF-4A62-9B00-1F0D8F656A3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A0EA141-F3BF-4A62-9B00-1F0D8F656A3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A0EA141-F3BF-4A62-9B00-1F0D8F656A3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A0EA141-F3BF-4A62-9B00-1F0D8F656A3A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B6B1147D-CF6B-4A8B-A014-BB4C7F4F2175}
+	EndGlobalSection
+EndGlobal
