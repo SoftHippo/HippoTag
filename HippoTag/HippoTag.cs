@@ -77,6 +77,11 @@ namespace HippoTag
 						category = m.Groups[1].Value;
 						categoryType = m.Groups[2].Value;
 
+						if (CategoryTags.ContainsKey(category))
+						{
+							throw HippoTagException($"Duplicate category {category}");
+						}
+
 						CategoryTags[category] = new HashSet<Tag>(new TagComparer());
 					}
 
@@ -86,8 +91,6 @@ namespace HippoTag
 					}
 				}
 			}
-
-			private void AddTag()
 		}
 
 		private static Exception HippoTagException(string v)
